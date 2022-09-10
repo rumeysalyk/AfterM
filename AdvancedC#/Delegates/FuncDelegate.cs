@@ -4,6 +4,10 @@ using UnityEngine;
 
 namespace Assets
 {
+    /*
+     * This delegate takes a 1-16 input parameter and must have one return parameter
+     * Syntax: Func<parameter list,output value> Object_name= new Func <parameter list,output value>(method_name);
+    */
     public class FuncDelegate : MonoBehaviour
     {
         static Func<int, int, bool> m_funcDelegate = new Func<int, int, bool>( FuncDelegate.Test );
