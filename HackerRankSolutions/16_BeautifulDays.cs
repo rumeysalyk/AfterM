@@ -35,8 +35,7 @@ class Result
             while (number > 0)
             {
                 last = number % 10;
-                if( last != 0 )
-                    inversedNumber = inversedNumber * 10 + last;
+                inversedNumber = inversedNumber * 10 + last;
                 number /= 10;
             }
 
