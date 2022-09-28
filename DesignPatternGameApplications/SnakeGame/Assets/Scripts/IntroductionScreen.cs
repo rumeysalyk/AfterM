@@ -19,10 +19,10 @@ public class IntroductionScreen : MonoBehaviour
     public void ToMainScreen()
     {
         SceneManager.LoadScene( "MainScene" );
-    }
+    } 
 
-    private void QuitGame()
+    public void OnApplicationQuit()
     {
-        Application.Quit();
+        Debug.Log( "Iam here" );
     }
 }
