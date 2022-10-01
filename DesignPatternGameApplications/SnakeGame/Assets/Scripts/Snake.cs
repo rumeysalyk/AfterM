@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Snake : MonoBehaviour
 {
+
+    [SerializeField] AudioSource m_mainSceneSound;
     Vector2 m_direction = Vector2.right;
     private List<Transform> m_segments = new List<Transform>();
     public Transform segmentPrefab;
@@ -11,6 +13,7 @@ public class Snake : MonoBehaviour
 
     public void Start()
     {
+        m_mainSceneSound.Play();
         ResetState();
     }
 
