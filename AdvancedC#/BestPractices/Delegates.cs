@@ -8,12 +8,12 @@ namespace Assets
 
         public Tester TestDelegateObject;
 
-        public TestDelegate()
+        public void Start()
         {
             TestDelegateObject = ExampleFunction;
 
-            TestDelegateObject(1254);
-            TestDelegateObject?.Invoke(1254); //Second call method
+            //TestDelegateObject(1254);
+            //TestDelegateObject?.Invoke(1254); //Second call method
 
             TestDelegateObject += ExampleFunction2;
             TestDelegateObject(1478);
