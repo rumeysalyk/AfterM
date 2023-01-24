@@ -5,11 +5,13 @@ namespace Assets
 {
     public class TestDelegate : MonoBehaviour
     {
-        public EventHandler TestDelegateObject;
+        public Action TestDelegateObject; //It delegate the methods which there is no return type and no parameter
 
         public void Start()
         {
-            TestDelegateObject( this, EventArgs.Empty );//sender,sended data
+            TestDelegateObject = ExampleFunction2;
+            TestDelegateObject();
+            //TestDelegateObject = () => { }; //anonymous function
         }
 
         public void ExampleFunction(int a_num)
@@ -17,9 +19,9 @@ namespace Assets
             UnityEngine.Debug.LogError("Number1: " + a_num);
         }
 
-        public void ExampleFunction2(int a_num)
+        public void ExampleFunction2()
         {
-            UnityEngine.Debug.LogError("Number2: " + a_num);
+            UnityEngine.Debug.LogError("Number");
         }
     }
 }
