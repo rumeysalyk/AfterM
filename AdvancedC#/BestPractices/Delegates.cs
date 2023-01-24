@@ -1,18 +1,15 @@
 using UnityEngine;
+using System;
 
 namespace Assets
 {
     public class TestDelegate : MonoBehaviour
     {
-        public delegate void Tester(int num);
-
-        public event Tester TestDelegateObject;
+        public EventHandler TestDelegateObject;
 
         public void Start()
         {
-            TestDelegateObject = ExampleFunction;
-
-            TestDelegateObject(1254);
+            TestDelegateObject( this, EventArgs.Empty );//sender,sended data
         }
 
         public void ExampleFunction(int a_num)
