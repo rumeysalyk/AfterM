@@ -6,17 +6,13 @@ namespace Assets
     {
         public delegate void Tester(int num);
 
-        public Tester TestDelegateObject;
+        public event Tester TestDelegateObject;
 
         public void Start()
         {
             TestDelegateObject = ExampleFunction;
 
-            //TestDelegateObject(1254);
-            //TestDelegateObject?.Invoke(1254); //Second call method
-
-            TestDelegateObject += ExampleFunction2;
-            TestDelegateObject(1478);
+            TestDelegateObject(1254);
         }
 
         public void ExampleFunction(int a_num)
