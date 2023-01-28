@@ -1,0 +1,7 @@
+C:\Users\rumeysa.HANSERVER\Desktop\ThinkTank\AdvancedC#\BestPractices\A1\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+C:\Users\rumeysa.HANSERVER\Desktop\ThinkTank\AdvancedC#\BestPractices\A1\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+C:\Users\rumeysa.HANSERVER\Desktop\ThinkTank\AdvancedC#\BestPractices\A1\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+C:\Users\rumeysa.HANSERVER\Desktop\ThinkTank\AdvancedC#\BestPractices\A1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.AssemblyReference.cache
+C:\Users\rumeysa.HANSERVER\Desktop\ThinkTank\AdvancedC#\BestPractices\A1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+C:\Users\rumeysa.HANSERVER\Desktop\ThinkTank\AdvancedC#\BestPractices\A1\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+C:\Users\rumeysa.HANSERVER\Desktop\ThinkTank\AdvancedC#\BestPractices\A1\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
