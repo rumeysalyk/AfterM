@@ -6,12 +6,10 @@
         {
             Restaurant restaurant = new Restaurant();
 
-            Reception reception = new Reception();
-
             Table table = new Table();
 
-            restaurant.NewCustomer += reception.ChargeWaiter;
-            restaurant.NewCustomer += table.BookTable;
+            
+            restaurant.Customer += table.BookTable;//dont use only = operator with event
 
             restaurant.AddCustomer( "Nazım Hikmet" );
 

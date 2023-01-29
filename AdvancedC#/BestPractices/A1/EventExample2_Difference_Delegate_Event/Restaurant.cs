@@ -1,24 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
+
 
 namespace ConsoleApp1
 {
     public class Restaurant
     {
-        public Action<string> NewCustomer; 
+        public delegate void NewCustomer( string a_customer );
+        public event NewCustomer Customer;
+
+
         public void AddCustomer( string a_customerName )
         {
-            NewCustomer?.Invoke( a_customerName );
+            Customer?.Invoke( a_customerName );
         }
     }
     
-    public class Reception
-    {
-        public void ChargeWaiter( string a_customerName )
-        {
-            Console.WriteLine( $"Charged a waiter for {a_customerName}" );
-        }
-    }
 
     public class Table
     {
