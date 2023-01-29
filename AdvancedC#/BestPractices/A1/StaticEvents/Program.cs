@@ -10,8 +10,6 @@
 
             Table table = new Table();
 
-            restaurant.AddCustomer( "Nazım Hikmet" );
-
             System.Threading.Thread.Sleep(5000);
         }
     }

@@ -19,6 +19,7 @@ namespace ConsoleApp1
         public Reception()
         {
             Restaurant.NewCustomer += ChargeWaiter;
+            Restaurant.NewCustomer("Nazım Hikmet");
         }
         
         public void ChargeWaiter( string a_customerName )
