@@ -4,18 +4,15 @@
     {
         static void Main(string[] args)
         {
-            SuperMario superMario = new SuperMario();
+            Restaurant restaurant = new Restaurant();
 
-            Music music = new Music();
+            Reception reception = new Reception();
 
-            Speed speed = new Speed();
+            Table table = new Table();
 
-            superMario.GainedMushroom += music.ChangeMusic; 
-            superMario.GainedMushroom += speed.SpeedUp;
+            restaurant.AddCustomer("Nazım Hikmet");
 
-            superMario.GainSpecialStar( 20 );
-
-            System.Threading.Thread.Sleep(10000);
+            System.Threading.Thread.Sleep(5000);
         }
     }
 }
